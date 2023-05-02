@@ -20,8 +20,8 @@ namespace CSharp_HomeWork
 
         private void btnShow_Click(object sender, EventArgs e)
         {
-            if (txtName.Text == "")
-                MessageBox.Show("請輸入姓名", "警告", MessageBoxButtons.OK, MessageBoxIcon.Warning);
+            if (txtName.Text == "" || txtName.Text.Length > 4)
+                MessageBox.Show("請輸入姓名(4字以內)", "警告", MessageBoxButtons.OK, MessageBoxIcon.Warning);
             else if (txtChScore.Text == "" || !(int.TryParse(txtChScore.Text, out student.ChScore)))
                 MessageBox.Show("請輸入國文成績", "警告", MessageBoxButtons.OK, MessageBoxIcon.Warning);
             else if (txtEnScore.Text == "" || !(int.TryParse(txtEnScore.Text, out student.EnScore)))
@@ -30,9 +30,18 @@ namespace CSharp_HomeWork
                 MessageBox.Show("請輸入數學成績", "警告", MessageBoxButtons.OK, MessageBoxIcon.Warning);
             else
             {
-                student.Name = txtName.Text;
-                //studentScores.Save(txtName.Text, int.Parse(txtChScore.Text), int.Parse(txtEnScore.Text), int.Parse(txtMathScore.Text));
-                labShowScore.Text = "姓名：" + student.Name + "\n" + "國文：" + student.ChScore + "\n" + "英文：" + student.EnScore + "\n" + "數學：" + student.MathScore;
+                if (student.ChScore > 100 || student.ChScore < 0)
+                    MessageBox.Show("請輸入正確的國文成績(0~100)", "警告", MessageBoxButtons.OK, MessageBoxIcon.Warning);
+                else if (student.EnScore > 100 || student.EnScore < 0)
+                    MessageBox.Show("請輸入正確的英文成績(0~100)", "警告", MessageBoxButtons.OK, MessageBoxIcon.Warning);
+                else if (student.MathScore > 100 || student.MathScore < 0)
+                    MessageBox.Show("請輸入正確的數學成績(0~100)", "警告", MessageBoxButtons.OK, MessageBoxIcon.Warning);
+                else
+                {
+                    student.Name = txtName.Text;
+                    //studentScores.Save(txtName.Text, int.Parse(txtChScore.Text), int.Parse(txtEnScore.Text), int.Parse(txtMathScore.Text));
+                    labShowScore.Text = "姓名：" + student.Name + "\n" + "國文：" + student.ChScore + "\n" + "英文：" + student.EnScore + "\n" + "數學：" + student.MathScore;
+                }
             }
         }
 

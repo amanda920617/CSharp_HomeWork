@@ -24,7 +24,7 @@ namespace CSharp_HomeWork
             //if (LoanValue.LoanPeriod == 0) return false;
             if (LoanValue.FullInterest == 0)
             {
-                MessageBox.Show("請先點擊 計算 再輸出統計", "警告", MessageBoxButtons.OK, MessageBoxIcon.Error);
+                MessageBox.Show("【全部利息】錯誤，請重新輸入，再輸出統計", "警告", MessageBoxButtons.OK, MessageBoxIcon.Error);
                 return false;
             }
             else

@@ -38,7 +38,6 @@ namespace CSharp_HomeWork
             ClearChecked();
         }
 
-
         private void txtMin_TextChanged(object sender, EventArgs e)
         {
             ClearChecked();
@@ -48,7 +47,7 @@ namespace CSharp_HomeWork
         {
             ClearChecked();
         }
-
+        
         private void checkBoxSetAlarm_CheckedChanged(object sender, EventArgs e)
         {
             if (checkBoxSetAlarm.Checked == false)

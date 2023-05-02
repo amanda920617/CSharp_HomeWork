@@ -200,7 +200,7 @@
             this.panel1.Controls.Add(this.labShow);
             this.panel1.Location = new System.Drawing.Point(135, 12);
             this.panel1.Name = "panel1";
-            this.panel1.Size = new System.Drawing.Size(717, 258);
+            this.panel1.Size = new System.Drawing.Size(735, 258);
             this.panel1.TabIndex = 30;
             // 
             // labScore
@@ -355,7 +355,7 @@
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 12F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.SystemColors.Control;
-            this.ClientSize = new System.Drawing.Size(861, 450);
+            this.ClientSize = new System.Drawing.Size(883, 450);
             this.Controls.Add(this.btnSearchCancel);
             this.Controls.Add(this.txtEnd);
             this.Controls.Add(this.labTo);

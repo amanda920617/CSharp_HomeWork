@@ -48,7 +48,7 @@
             // 
             this.labName.AutoSize = true;
             this.labName.Font = new System.Drawing.Font("微軟正黑體", 20.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(136)));
-            this.labName.Location = new System.Drawing.Point(85, 65);
+            this.labName.Location = new System.Drawing.Point(46, 65);
             this.labName.Name = "labName";
             this.labName.Size = new System.Drawing.Size(96, 34);
             this.labName.TabIndex = 0;
@@ -57,7 +57,7 @@
             // txtName
             // 
             this.txtName.Font = new System.Drawing.Font("微軟正黑體", 20.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(136)));
-            this.txtName.Location = new System.Drawing.Point(187, 62);
+            this.txtName.Location = new System.Drawing.Point(148, 62);
             this.txtName.Name = "txtName";
             this.txtName.Size = new System.Drawing.Size(100, 43);
             this.txtName.TabIndex = 1;
@@ -66,7 +66,7 @@
             // btnShowScore
             // 
             this.btnShowScore.Font = new System.Drawing.Font("微軟正黑體", 20.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(136)));
-            this.btnShowScore.Location = new System.Drawing.Point(50, 335);
+            this.btnShowScore.Location = new System.Drawing.Point(11, 335);
             this.btnShowScore.Name = "btnShowScore";
             this.btnShowScore.Size = new System.Drawing.Size(277, 45);
             this.btnShowScore.TabIndex = 3;
@@ -77,7 +77,7 @@
             // txtChScore
             // 
             this.txtChScore.Font = new System.Drawing.Font("微軟正黑體", 20.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(136)));
-            this.txtChScore.Location = new System.Drawing.Point(187, 122);
+            this.txtChScore.Location = new System.Drawing.Point(148, 122);
             this.txtChScore.Name = "txtChScore";
             this.txtChScore.Size = new System.Drawing.Size(100, 43);
             this.txtChScore.TabIndex = 5;
@@ -88,7 +88,7 @@
             // 
             this.labChScore.AutoSize = true;
             this.labChScore.Font = new System.Drawing.Font("微軟正黑體", 20.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(136)));
-            this.labChScore.Location = new System.Drawing.Point(85, 125);
+            this.labChScore.Location = new System.Drawing.Point(46, 125);
             this.labChScore.Name = "labChScore";
             this.labChScore.Size = new System.Drawing.Size(96, 34);
             this.labChScore.TabIndex = 4;
@@ -97,7 +97,7 @@
             // txtEnScore
             // 
             this.txtEnScore.Font = new System.Drawing.Font("微軟正黑體", 20.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(136)));
-            this.txtEnScore.Location = new System.Drawing.Point(187, 182);
+            this.txtEnScore.Location = new System.Drawing.Point(148, 182);
             this.txtEnScore.Name = "txtEnScore";
             this.txtEnScore.Size = new System.Drawing.Size(100, 43);
             this.txtEnScore.TabIndex = 7;
@@ -108,7 +108,7 @@
             // 
             this.labEnScore.AutoSize = true;
             this.labEnScore.Font = new System.Drawing.Font("微軟正黑體", 20.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(136)));
-            this.labEnScore.Location = new System.Drawing.Point(85, 185);
+            this.labEnScore.Location = new System.Drawing.Point(46, 185);
             this.labEnScore.Name = "labEnScore";
             this.labEnScore.Size = new System.Drawing.Size(96, 34);
             this.labEnScore.TabIndex = 6;
@@ -117,7 +117,7 @@
             // txtMathScore
             // 
             this.txtMathScore.Font = new System.Drawing.Font("微軟正黑體", 20.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(136)));
-            this.txtMathScore.Location = new System.Drawing.Point(187, 242);
+            this.txtMathScore.Location = new System.Drawing.Point(148, 242);
             this.txtMathScore.Name = "txtMathScore";
             this.txtMathScore.Size = new System.Drawing.Size(100, 43);
             this.txtMathScore.TabIndex = 9;
@@ -128,7 +128,7 @@
             // 
             this.labMathScore.AutoSize = true;
             this.labMathScore.Font = new System.Drawing.Font("微軟正黑體", 20.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(136)));
-            this.labMathScore.Location = new System.Drawing.Point(85, 245);
+            this.labMathScore.Location = new System.Drawing.Point(46, 245);
             this.labMathScore.Name = "labMathScore";
             this.labMathScore.Size = new System.Drawing.Size(96, 34);
             this.labMathScore.TabIndex = 8;
@@ -139,9 +139,9 @@
             this.Score.Controls.Add(this.labHighestLowestSubject);
             this.Score.Controls.Add(this.labShowScore);
             this.Score.Font = new System.Drawing.Font("微軟正黑體", 20.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(136)));
-            this.Score.Location = new System.Drawing.Point(383, 62);
+            this.Score.Location = new System.Drawing.Point(306, 62);
             this.Score.Name = "Score";
-            this.Score.Size = new System.Drawing.Size(367, 248);
+            this.Score.Size = new System.Drawing.Size(482, 248);
             this.Score.TabIndex = 11;
             this.Score.TabStop = false;
             this.Score.Text = "成績";
@@ -152,7 +152,7 @@
             this.labHighestLowestSubject.Font = new System.Drawing.Font("微軟正黑體", 15.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(136)));
             this.labHighestLowestSubject.Location = new System.Drawing.Point(6, 159);
             this.labHighestLowestSubject.Name = "labHighestLowestSubject";
-            this.labHighestLowestSubject.Size = new System.Drawing.Size(355, 86);
+            this.labHighestLowestSubject.Size = new System.Drawing.Size(470, 86);
             this.labHighestLowestSubject.TabIndex = 1;
             // 
             // labShowScore
@@ -161,13 +161,13 @@
             this.labShowScore.Font = new System.Drawing.Font("微軟正黑體", 15.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(136)));
             this.labShowScore.Location = new System.Drawing.Point(6, 39);
             this.labShowScore.Name = "labShowScore";
-            this.labShowScore.Size = new System.Drawing.Size(355, 113);
+            this.labShowScore.Size = new System.Drawing.Size(470, 113);
             this.labShowScore.TabIndex = 0;
             // 
             // btnHighestLowestSubject
             // 
             this.btnHighestLowestSubject.Font = new System.Drawing.Font("微軟正黑體", 20.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(136)));
-            this.btnHighestLowestSubject.Location = new System.Drawing.Point(490, 335);
+            this.btnHighestLowestSubject.Location = new System.Drawing.Point(451, 335);
             this.btnHighestLowestSubject.Name = "btnHighestLowestSubject";
             this.btnHighestLowestSubject.Size = new System.Drawing.Size(260, 45);
             this.btnHighestLowestSubject.TabIndex = 12;

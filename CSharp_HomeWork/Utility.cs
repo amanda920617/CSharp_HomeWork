@@ -17,7 +17,6 @@ namespace CSharp_HomeWork
         public static double MonthlyInterestRate;
         public static string[] text = new string[10];
     }
-
     public partial struct Student
     {
         public string Name;
@@ -49,7 +48,6 @@ namespace CSharp_HomeWork
         }
         public void Result()
         {
-
             if (Num == Answer)
             {
                 MessageBox.Show("恭喜你猜對了！炸彈數字是 " + Answer);
@@ -67,7 +65,6 @@ namespace CSharp_HomeWork
                 labResult = "太小了\n";
                 labResult += "炸彈介於" + Min + "~" + Max;
             }
-
         }
         public bool LargeSmall()
         {

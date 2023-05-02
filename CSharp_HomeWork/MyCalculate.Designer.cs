@@ -39,6 +39,7 @@
             this.txtNum1 = new System.Windows.Forms.TextBox();
             this.txtNum2 = new System.Windows.Forms.TextBox();
             this.txtAnswer = new System.Windows.Forms.TextBox();
+            this.label1 = new System.Windows.Forms.Label();
             this.SuspendLayout();
             // 
             // labNum1
@@ -76,17 +77,17 @@
             this.labLine.AutoSize = true;
             this.labLine.Location = new System.Drawing.Point(12, 145);
             this.labLine.Name = "labLine";
-            this.labLine.Size = new System.Drawing.Size(215, 12);
+            this.labLine.Size = new System.Drawing.Size(335, 12);
             this.labLine.TabIndex = 3;
-            this.labLine.Text = "===================================";
+            this.labLine.Text = "=======================================================";
             // 
             // btnAddition
             // 
             this.btnAddition.Cursor = System.Windows.Forms.Cursors.Default;
             this.btnAddition.Font = new System.Drawing.Font("微軟正黑體", 20.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(136)));
-            this.btnAddition.Location = new System.Drawing.Point(232, 33);
+            this.btnAddition.Location = new System.Drawing.Point(357, 27);
             this.btnAddition.Name = "btnAddition";
-            this.btnAddition.Size = new System.Drawing.Size(43, 44);
+            this.btnAddition.Size = new System.Drawing.Size(49, 48);
             this.btnAddition.TabIndex = 4;
             this.btnAddition.Text = "+";
             this.btnAddition.UseVisualStyleBackColor = true;
@@ -95,9 +96,9 @@
             // btnSaubraction
             // 
             this.btnSaubraction.Font = new System.Drawing.Font("微軟正黑體", 20.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(136)));
-            this.btnSaubraction.Location = new System.Drawing.Point(232, 83);
+            this.btnSaubraction.Location = new System.Drawing.Point(357, 81);
             this.btnSaubraction.Name = "btnSaubraction";
-            this.btnSaubraction.Size = new System.Drawing.Size(43, 44);
+            this.btnSaubraction.Size = new System.Drawing.Size(49, 48);
             this.btnSaubraction.TabIndex = 5;
             this.btnSaubraction.Text = "-";
             this.btnSaubraction.UseVisualStyleBackColor = true;
@@ -106,9 +107,9 @@
             // btnMultipication
             // 
             this.btnMultipication.Font = new System.Drawing.Font("微軟正黑體", 20.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(136)));
-            this.btnMultipication.Location = new System.Drawing.Point(232, 133);
+            this.btnMultipication.Location = new System.Drawing.Point(357, 135);
             this.btnMultipication.Name = "btnMultipication";
-            this.btnMultipication.Size = new System.Drawing.Size(43, 44);
+            this.btnMultipication.Size = new System.Drawing.Size(49, 48);
             this.btnMultipication.TabIndex = 6;
             this.btnMultipication.Text = "*";
             this.btnMultipication.UseVisualStyleBackColor = true;
@@ -117,9 +118,9 @@
             // btnDivision
             // 
             this.btnDivision.Font = new System.Drawing.Font("微軟正黑體", 20.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(136)));
-            this.btnDivision.Location = new System.Drawing.Point(232, 183);
+            this.btnDivision.Location = new System.Drawing.Point(357, 189);
             this.btnDivision.Name = "btnDivision";
-            this.btnDivision.Size = new System.Drawing.Size(43, 44);
+            this.btnDivision.Size = new System.Drawing.Size(49, 48);
             this.btnDivision.TabIndex = 7;
             this.btnDivision.Text = "/";
             this.btnDivision.UseVisualStyleBackColor = true;
@@ -128,33 +129,48 @@
             // txtNum1
             // 
             this.txtNum1.Font = new System.Drawing.Font("微軟正黑體", 20.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(136)));
-            this.txtNum1.Location = new System.Drawing.Point(108, 40);
+            this.txtNum1.Location = new System.Drawing.Point(122, 40);
+            this.txtNum1.MaxLength = 6;
             this.txtNum1.Name = "txtNum1";
-            this.txtNum1.Size = new System.Drawing.Size(100, 43);
+            this.txtNum1.Size = new System.Drawing.Size(210, 43);
             this.txtNum1.TabIndex = 8;
             // 
             // txtNum2
             // 
             this.txtNum2.Font = new System.Drawing.Font("微軟正黑體", 20.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(136)));
-            this.txtNum2.Location = new System.Drawing.Point(108, 90);
+            this.txtNum2.Location = new System.Drawing.Point(122, 89);
+            this.txtNum2.MaxLength = 6;
             this.txtNum2.Name = "txtNum2";
-            this.txtNum2.Size = new System.Drawing.Size(100, 43);
+            this.txtNum2.Size = new System.Drawing.Size(210, 43);
             this.txtNum2.TabIndex = 9;
             // 
             // txtAnswer
             // 
             this.txtAnswer.Font = new System.Drawing.Font("微軟正黑體", 20.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(136)));
-            this.txtAnswer.Location = new System.Drawing.Point(108, 173);
+            this.txtAnswer.Location = new System.Drawing.Point(122, 173);
             this.txtAnswer.Name = "txtAnswer";
             this.txtAnswer.ReadOnly = true;
-            this.txtAnswer.Size = new System.Drawing.Size(100, 43);
+            this.txtAnswer.Size = new System.Drawing.Size(210, 43);
             this.txtAnswer.TabIndex = 11;
+            // 
+            // label1
+            // 
+            this.label1.AutoSize = true;
+            this.label1.Font = new System.Drawing.Font("微軟正黑體", 15.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(136)));
+            this.label1.ForeColor = System.Drawing.Color.Red;
+            this.label1.Location = new System.Drawing.Point(10, 13);
+            this.label1.Name = "label1";
+            this.label1.Size = new System.Drawing.Size(335, 27);
+            this.label1.TabIndex = 12;
+            this.label1.Text = "Num1、Num2皆限制輸入6位數！";
             // 
             // MyCalculate
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 12F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(300, 256);
+            this.AutoScroll = true;
+            this.ClientSize = new System.Drawing.Size(433, 270);
+            this.Controls.Add(this.label1);
             this.Controls.Add(this.txtAnswer);
             this.Controls.Add(this.txtNum2);
             this.Controls.Add(this.txtNum1);
@@ -186,5 +202,6 @@
         private System.Windows.Forms.TextBox txtNum1;
         private System.Windows.Forms.TextBox txtNum2;
         private System.Windows.Forms.TextBox txtAnswer;
+        private System.Windows.Forms.Label label1;
     }
 }

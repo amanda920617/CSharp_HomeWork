@@ -222,7 +222,7 @@ namespace CSharp_HomeWork
             temp = n1;
             n1 = n2;
             n2 = temp;
-            labShowResult.Text += $"換位後 n1 =  {n1}  , n2 =  {n2} \n";
+            labShowResult.Text += $"換位後 n1 = {n1} , n2 = {n2} \n";
         }
 
         private void btnTree_Click(object sender, EventArgs e)

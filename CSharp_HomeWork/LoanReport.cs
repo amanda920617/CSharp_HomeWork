@@ -26,7 +26,7 @@ namespace CSharp_HomeWork
             txtAllAmount.Text = (LoanValue.LoanAmount + LoanValue.FullInterest).ToString();
             if(LoanValue.FullInterest == 0)
             {
-                MessageBox.Show("請先點擊 計算 再輸出報表","警告",MessageBoxButtons.OK,MessageBoxIcon.Error);
+                MessageBox.Show("【全部利息】錯誤，請重新輸入，再輸出報表", "警告",MessageBoxButtons.OK,MessageBoxIcon.Error);
                 return false;
             }
             else

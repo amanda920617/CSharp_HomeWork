@@ -22,34 +22,23 @@ namespace CSharp_HomeWork
         decimal Ans;
         public bool CheckNumber()
         {
-            if (txtNum1.Text == "" || txtNum2.Text == "")
+            if (!(decimal.TryParse(txtNum1.Text,out num1)))
             {
-                MessageBox.Show("請輸入數值！");
+                MessageBox.Show("請輸入正確Num1數值！");
+                return false;
+            }
+            else if (!(decimal.TryParse(txtNum2.Text, out num2)))
+            {
+                MessageBox.Show("請輸入正確Num2數值！");
                 return false;
             }
             else 
                 return true;
         }
-        private decimal GetNumber(int now)
-        {
-            Number Num = new Number();
-            if (now == 1)
-            {
-                Num.num1 = decimal.Parse(txtNum1.Text);
-                return Num.num1;
-            }
-            else
-            {
-                Num.num2 = decimal.Parse(txtNum2.Text);
-                return Num.num2;
-            }
-        }
         private void btnAddition_Click(object sender, EventArgs e)
         {
             if (CheckNumber() == false)
                 return;
-            num1 = GetNumber(1);
-            num2 = GetNumber(2);
             Ans = num1 + num2;
             Ans = decimal.Round(Ans, 4);
             txtAnswer.Text = Ans.ToString();
@@ -59,8 +48,6 @@ namespace CSharp_HomeWork
         {
             if (CheckNumber() == false)
                 return;
-            num1 = GetNumber(1);
-            num2 = GetNumber(2);
             Ans = num1 - num2;
             Ans = decimal.Round(Ans, 4);
             txtAnswer.Text = Ans.ToString();
@@ -70,8 +57,6 @@ namespace CSharp_HomeWork
         {
             if (CheckNumber() == false)
                 return;
-            num1 = GetNumber(1);
-            num2 = GetNumber(2);
             Ans = num1 * num2;
             Ans = decimal.Round(Ans, 4);
             txtAnswer.Text = Ans.ToString();
@@ -81,16 +66,9 @@ namespace CSharp_HomeWork
         {
             if (CheckNumber() == false)
                 return;
-            num1 = GetNumber(1);
-            num2 = GetNumber(2);
             Ans = num1 / num2;
             Ans = decimal.Round(Ans, 4);
             txtAnswer.Text = Ans.ToString();
         }
-    }
-        public partial class Number
-    {
-        public decimal num1;
-        public decimal num2;
     }
 }

@@ -156,34 +156,54 @@ namespace CSharp_HomeWork
 
         private void btnSearch_Click(object sender, EventArgs e)
         {
-            btnRemove.Enabled = false;
-            btnStatistics.Enabled=false;
-
             if (comboBoxProject.Text != "國文成績" && comboBoxProject.Text != "英文成績" && comboBoxProject.Text != "數學成績")
             {
-                MessageBox.Show("錯誤！請重新使用下拉選單選擇項目成績");
-                return;
+                MessageBox.Show("錯誤！請重新使用下拉選單選擇科目成績");
+                txtStart.Clear();
+                txtEnd.Clear();
             }
-
-            if (txtStart.Text == "" || !(int.TryParse(txtStart.Text, out int start)))
-                MessageBox.Show("請輸入範圍起始值", "警告", MessageBoxButtons.OK, MessageBoxIcon.Warning);
-            else if (txtEnd.Text == "" || !(int.TryParse(txtEnd.Text, out int end)))
-                MessageBox.Show("請輸入範圍結束值", "警告", MessageBoxButtons.OK, MessageBoxIcon.Warning);
             else
             {
-                if (start > 100 || start < 0)
-                    MessageBox.Show($"請輸入正確的{comboBoxProject.Text}範圍起始值(0~100)", "警告", MessageBoxButtons.OK, MessageBoxIcon.Warning);
-                else if (start > 300 || start < 0)
-                    MessageBox.Show($"請輸入正確的{comboBoxProject.Text}範圍起始值(0~300)", "警告", MessageBoxButtons.OK, MessageBoxIcon.Warning);
-                if (end > 100 || end < 0)
-                    MessageBox.Show($"請輸入正確的{comboBoxProject.Text}範圍結束值(0~100)", "警告", MessageBoxButtons.OK, MessageBoxIcon.Warning);
-                else if (end > 300 || end < 0)
-                    MessageBox.Show($"請輸入正確的{comboBoxProject.Text}範圍結束值(0~300)", "警告", MessageBoxButtons.OK, MessageBoxIcon.Warning);
-                
-                if(end < start)
-                    MessageBox.Show($"請輸入正確的成績範圍(0~300)", "警告", MessageBoxButtons.OK, MessageBoxIcon.Warning);
+                if (txtStart.Text == "" || !(int.TryParse(txtStart.Text, out int start)))
+                {
+                    MessageBox.Show("請輸入範圍起始值", "警告", MessageBoxButtons.OK, MessageBoxIcon.Warning);
+                    txtStart.Clear();
+                }
+                else if (txtEnd.Text == "" || !(int.TryParse(txtEnd.Text, out int end)))
+                {
+                    MessageBox.Show("請輸入範圍結束值", "警告", MessageBoxButtons.OK, MessageBoxIcon.Warning);
+                    txtEnd.Clear();
+                }
                 else
-                    Search(comboBoxProject.SelectedIndex,start,end);
+                {
+                    if (start > 100 || start < 0)
+                    {
+                        MessageBox.Show($"請輸入正確的{comboBoxProject.Text}範圍起始值(0~100)", "警告", MessageBoxButtons.OK, MessageBoxIcon.Warning);
+                        txtStart.Clear();
+                    }
+                    else if (end > 100 || end < 0)
+                    {
+                        MessageBox.Show($"請輸入正確的{comboBoxProject.Text}範圍結束值(0~100)", "警告", MessageBoxButtons.OK, MessageBoxIcon.Warning);
+                        txtEnd.Clear();
+                    }
+                    else if (end <= start)
+                    {
+                        MessageBox.Show($"請輸入正確的成績範圍(0~100、起始值<結束值)", "警告", MessageBoxButtons.OK, MessageBoxIcon.Warning);
+                        txtStart.Clear();
+                        txtEnd.Clear();
+                    }
+                    else
+                    {
+                        btnSave.Enabled = false;
+                        btnInsert.Enabled = false;
+                        btnRandom.Enabled = false;
+                        btnRandom20.Enabled = false;
+                        btnClear.Enabled = false;
+                        btnRemove.Enabled = false;
+                        btnStatistics.Enabled = false;
+                        Search(comboBoxProject.SelectedIndex, start, end);
+                    }
+                }
             }
         }
 
@@ -239,6 +259,11 @@ namespace CSharp_HomeWork
 
         private void btnSearchCancel_Click(object sender, EventArgs e)
         {
+            btnSave.Enabled = true;
+            btnInsert.Enabled = true;
+            btnRandom.Enabled = true;
+            btnRandom20.Enabled = true;
+            btnClear.Enabled = true;
             btnRemove.Enabled = true;
             btnStatistics.Enabled = true;
             ShowScore();
