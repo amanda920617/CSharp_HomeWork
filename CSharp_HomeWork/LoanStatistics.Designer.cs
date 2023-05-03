@@ -38,9 +38,10 @@
             // 
             this.label1.Font = new System.Drawing.Font("微軟正黑體", 16.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(136)));
             this.label1.ForeColor = System.Drawing.Color.Red;
-            this.label1.Location = new System.Drawing.Point(81, 9);
+            this.label1.Location = new System.Drawing.Point(61, 7);
+            this.label1.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(361, 51);
+            this.label1.Size = new System.Drawing.Size(271, 41);
             this.label1.TabIndex = 0;
             this.label1.Text = "每期應繳金額($)";
             this.label1.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
@@ -53,11 +54,12 @@
             this.TableStatistics.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle());
             this.TableStatistics.Font = new System.Drawing.Font("微軟正黑體", 16.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(136)));
             this.TableStatistics.Location = new System.Drawing.Point(0, 0);
+            this.TableStatistics.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.TableStatistics.Name = "TableStatistics";
-            this.TableStatistics.Padding = new System.Windows.Forms.Padding(0, 0, 0, 40);
+            this.TableStatistics.Padding = new System.Windows.Forms.Padding(0, 0, 0, 32);
             this.TableStatistics.RowCount = 1;
             this.TableStatistics.RowStyles.Add(new System.Windows.Forms.RowStyle());
-            this.TableStatistics.Size = new System.Drawing.Size(0, 40);
+            this.TableStatistics.Size = new System.Drawing.Size(0, 32);
             this.TableStatistics.TabIndex = 2;
             // 
             // PanelStatistics
@@ -65,19 +67,21 @@
             this.PanelStatistics.AutoScroll = true;
             this.PanelStatistics.AutoSize = true;
             this.PanelStatistics.Controls.Add(this.TableStatistics);
-            this.PanelStatistics.Location = new System.Drawing.Point(44, 63);
+            this.PanelStatistics.Location = new System.Drawing.Point(33, 50);
+            this.PanelStatistics.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.PanelStatistics.Name = "PanelStatistics";
-            this.PanelStatistics.Size = new System.Drawing.Size(424, 360);
+            this.PanelStatistics.Size = new System.Drawing.Size(318, 288);
             this.PanelStatistics.TabIndex = 3;
             // 
             // LoanStatistics
             // 
-            this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 15F);
+            this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 12F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.AutoScroll = true;
-            this.ClientSize = new System.Drawing.Size(517, 465);
+            this.ClientSize = new System.Drawing.Size(388, 372);
             this.Controls.Add(this.PanelStatistics);
             this.Controls.Add(this.label1);
+            this.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.Name = "LoanStatistics";
             this.Text = "LoanStatistics";
             this.PanelStatistics.ResumeLayout(false);
