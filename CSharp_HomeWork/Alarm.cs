@@ -72,9 +72,16 @@ namespace CSharp_HomeWork
                 Alarm = $"{Hr:D2}:{Min:D2}:{Sec:D2}";
                 if(string.Equals(NowTime, Alarm))
                 {
-                    SoundPlayer soundPlayer = new SoundPlayer(@"E:\MSIT_150\CSharp作業\CSharp_HomeWork\CSharp_HomeWork\Music\手機鬧鐘鈴聲.wav");
-                    soundPlayer.Play();
-                    //MessageBox.Show($"嗶嗶嗶");
+                    try
+                    {
+                        SoundPlayer soundPlayer = new SoundPlayer($@"C:\MSIT_150\CSharp_HomeWork\CSharp_HomeWork\Music\手機鬧鐘鈴聲.wav");
+                        soundPlayer.Play();
+                    }
+                    catch(Exception ex)
+                    {
+                        MessageBox.Show($"例外狀況發生啦！\n{ex.Message}\n\n因本作業檔案下載到電腦的位置不同，故音效檔無法正確播放，請自行重新修改並確認路徑正確後，再次執行，謝謝您的配合！");
+                    }
+                    MessageBox.Show($"嗶嗶嗶\n鬧鐘響啦！");
                     checkBoxSetAlarm.Checked = false;
                     flag = false;
                     txtHr.Clear();

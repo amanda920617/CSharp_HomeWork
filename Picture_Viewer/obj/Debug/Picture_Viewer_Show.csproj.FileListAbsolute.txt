@@ -20,3 +20,14 @@ E:\MSIT_150\CSharp作業\CSharp_HomeWork\Picture_Viewer\obj\Debug\Picture_Viewer
 E:\MSIT_150\CSharp作業\CSharp_HomeWork\Picture_Viewer\obj\Debug\Picture_Viewer_Show.csproj.CoreCompileInputs.cache
 E:\MSIT_150\CSharp作業\CSharp_HomeWork\Picture_Viewer\obj\Debug\Picture_Viewer.exe
 E:\MSIT_150\CSharp作業\CSharp_HomeWork\Picture_Viewer\obj\Debug\Picture_Viewer.pdb
+C:\MSIT_150\CSharp_HomeWork\Picture_Viewer\bin\Debug\Picture_Viewer.exe.config
+C:\MSIT_150\CSharp_HomeWork\Picture_Viewer\bin\Debug\Picture_Viewer.exe
+C:\MSIT_150\CSharp_HomeWork\Picture_Viewer\bin\Debug\Picture_Viewer.pdb
+C:\MSIT_150\CSharp_HomeWork\Picture_Viewer\obj\Debug\Picture_Viewer_Show.csproj.AssemblyReference.cache
+C:\MSIT_150\CSharp_HomeWork\Picture_Viewer\obj\Debug\Picture_Viewer_Show.csproj.SuggestedBindingRedirects.cache
+C:\MSIT_150\CSharp_HomeWork\Picture_Viewer\obj\Debug\Picture_Viewer.Properties.Resources.resources
+C:\MSIT_150\CSharp_HomeWork\Picture_Viewer\obj\Debug\Picture_Viewer.ShowPicture.resources
+C:\MSIT_150\CSharp_HomeWork\Picture_Viewer\obj\Debug\Picture_Viewer_Show.csproj.GenerateResource.cache
+C:\MSIT_150\CSharp_HomeWork\Picture_Viewer\obj\Debug\Picture_Viewer_Show.csproj.CoreCompileInputs.cache
+C:\MSIT_150\CSharp_HomeWork\Picture_Viewer\obj\Debug\Picture_Viewer.exe
+C:\MSIT_150\CSharp_HomeWork\Picture_Viewer\obj\Debug\Picture_Viewer.pdb

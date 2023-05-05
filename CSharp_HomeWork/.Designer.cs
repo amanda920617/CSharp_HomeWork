@@ -142,7 +142,7 @@
             this.btnAlarm.Name = "btnAlarm";
             this.btnAlarm.Size = new System.Drawing.Size(263, 26);
             this.btnAlarm.TabIndex = 15;
-            this.btnAlarm.Text = "Alarm";
+            this.btnAlarm.Text = "Alarm(有寫例外狀況)";
             this.btnAlarm.UseVisualStyleBackColor = true;
             this.btnAlarm.Click += new System.EventHandler(this.btnAlarm_Click);
             // 
@@ -168,7 +168,7 @@
             this.btnPictureViewer.Name = "btnPictureViewer";
             this.btnPictureViewer.Size = new System.Drawing.Size(263, 26);
             this.btnPictureViewer.TabIndex = 13;
-            this.btnPictureViewer.Text = "Picture Viewer";
+            this.btnPictureViewer.Text = "Picture Viewer(有寫例外狀況)";
             this.btnPictureViewer.UseVisualStyleBackColor = true;
             this.btnPictureViewer.Click += new System.EventHandler(this.btnPictureViewer_Click);
             // 
