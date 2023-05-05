@@ -22,7 +22,7 @@ namespace Picture_Viewer
         {
             try
             {
-                pictureBox1.Image = Image.FromFile($@"C:\MSIT_150\CSharp_HomeWork\Picture_Viewer\Image\{name}");
+                pictureBox1.Image = Image.FromFile($@"C:\MSIT150\CSharp_HomeWork\Picture_Viewer\Image\{name}");
             }
             catch (Exception e)
             {

@@ -74,7 +74,7 @@ namespace CSharp_HomeWork
                 {
                     try
                     {
-                        SoundPlayer soundPlayer = new SoundPlayer($@"C:\MSIT_150\CSharp_HomeWork\CSharp_HomeWork\Music\手機鬧鐘鈴聲.wav");
+                        SoundPlayer soundPlayer = new SoundPlayer($@"C:\MSIT150\CSharp_HomeWork\CSharp_HomeWork\Music\手機鬧鐘鈴聲.wav");
                         soundPlayer.Play();
                     }
                     catch(Exception ex)
