@@ -190,3 +190,4 @@ C:\MSIT150\CSharp_HomeWork\CSharp_HomeWork\obj\Debug\CSharp_HomeWork.csproj.Core
 C:\MSIT150\CSharp_HomeWork\CSharp_HomeWork\obj\Debug\CSharp_HomeWork.csproj.CopyComplete
 C:\MSIT150\CSharp_HomeWork\CSharp_HomeWork\obj\Debug\CSharp_HomeWork.exe
 C:\MSIT150\CSharp_HomeWork\CSharp_HomeWork\obj\Debug\CSharp_HomeWork.pdb
+C:\MSIT150\CSharp_HomeWork\CSharp_HomeWork\obj\Debug\CSharp_HomeWork.NotePad.resources
