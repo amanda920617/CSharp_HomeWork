@@ -45,6 +45,7 @@
             this.btnPos = new System.Windows.Forms.Button();
             this.btnLoan = new System.Windows.Forms.Button();
             this.btnHello = new System.Windows.Forms.Button();
+            this.NotePad = new System.Windows.Forms.Button();
             ((System.ComponentModel.ISupportInitialize)(this.splitContainer1)).BeginInit();
             this.splitContainer1.Panel1.SuspendLayout();
             this.splitContainer1.Panel2.SuspendLayout();
@@ -98,6 +99,7 @@
             // 
             this.splitContainer2.Panel1.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("splitContainer2.Panel1.BackgroundImage")));
             this.splitContainer2.Panel1.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
+            this.splitContainer2.Panel1.Controls.Add(this.NotePad);
             this.splitContainer2.Panel1.Controls.Add(this.btnMethod);
             this.splitContainer2.Panel1.Controls.Add(this.btnAlarm);
             this.splitContainer2.Panel1.Controls.Add(this.btnGuess);
@@ -138,7 +140,7 @@
             this.btnAlarm.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Left) 
             | System.Windows.Forms.AnchorStyles.Right)));
             this.btnAlarm.Font = new System.Drawing.Font("微軟正黑體", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(136)));
-            this.btnAlarm.Location = new System.Drawing.Point(11, 401);
+            this.btnAlarm.Location = new System.Drawing.Point(11, 433);
             this.btnAlarm.Name = "btnAlarm";
             this.btnAlarm.Size = new System.Drawing.Size(263, 26);
             this.btnAlarm.TabIndex = 15;
@@ -151,7 +153,7 @@
             this.btnGuess.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Left) 
             | System.Windows.Forms.AnchorStyles.Right)));
             this.btnGuess.Font = new System.Drawing.Font("微軟正黑體", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(136)));
-            this.btnGuess.Location = new System.Drawing.Point(11, 369);
+            this.btnGuess.Location = new System.Drawing.Point(11, 401);
             this.btnGuess.Name = "btnGuess";
             this.btnGuess.Size = new System.Drawing.Size(263, 26);
             this.btnGuess.TabIndex = 14;
@@ -164,7 +166,7 @@
             this.btnPictureViewer.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Left) 
             | System.Windows.Forms.AnchorStyles.Right)));
             this.btnPictureViewer.Font = new System.Drawing.Font("微軟正黑體", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(136)));
-            this.btnPictureViewer.Location = new System.Drawing.Point(11, 337);
+            this.btnPictureViewer.Location = new System.Drawing.Point(11, 369);
             this.btnPictureViewer.Name = "btnPictureViewer";
             this.btnPictureViewer.Size = new System.Drawing.Size(263, 26);
             this.btnPictureViewer.TabIndex = 13;
@@ -177,7 +179,7 @@
             this.btnPainter.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Left) 
             | System.Windows.Forms.AnchorStyles.Right)));
             this.btnPainter.Font = new System.Drawing.Font("微軟正黑體", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(136)));
-            this.btnPainter.Location = new System.Drawing.Point(11, 305);
+            this.btnPainter.Location = new System.Drawing.Point(11, 337);
             this.btnPainter.Name = "btnPainter";
             this.btnPainter.Size = new System.Drawing.Size(263, 26);
             this.btnPainter.TabIndex = 12;
@@ -289,6 +291,19 @@
             this.btnHello.UseVisualStyleBackColor = true;
             this.btnHello.Click += new System.EventHandler(this.btnHello_Click);
             // 
+            // NotePad
+            // 
+            this.NotePad.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Left) 
+            | System.Windows.Forms.AnchorStyles.Right)));
+            this.NotePad.Font = new System.Drawing.Font("微軟正黑體", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(136)));
+            this.NotePad.Location = new System.Drawing.Point(11, 305);
+            this.NotePad.Name = "NotePad";
+            this.NotePad.Size = new System.Drawing.Size(263, 26);
+            this.NotePad.TabIndex = 17;
+            this.NotePad.Text = "NotePad";
+            this.NotePad.UseVisualStyleBackColor = true;
+            this.NotePad.Click += new System.EventHandler(this.NotePad_Click);
+            // 
             // Home
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 12F);
@@ -330,6 +345,7 @@
         private System.Windows.Forms.Button btnPictureViewer;
         private System.Windows.Forms.Button btnPainter;
         private System.Windows.Forms.Button btnMethod;
+        private System.Windows.Forms.Button NotePad;
     }
 }
 

@@ -16,6 +16,7 @@ namespace CSharp_HomeWork
         public NotePad()
         {
             InitializeComponent();
+            Rtxt.LanguageOption = RichTextBoxLanguageOptions.UIFonts;
         }
         string name = string.Empty;
         private void 新增Add_Click(object sender, EventArgs e)
@@ -88,7 +89,6 @@ namespace CSharp_HomeWork
         {
             Rtxt.Redo();
         }
-
         private void 剪下Cut_Click(object sender, EventArgs e)
         {
             Rtxt.Cut();
@@ -96,12 +96,12 @@ namespace CSharp_HomeWork
 
         private void 複製Copy_Click(object sender, EventArgs e)
         {
-            Clipboard.SetDataObject(Rtxt.Text);
+            Rtxt.Copy();
         }
 
         private void 貼上Paste_Click(object sender, EventArgs e)
         {
-            Rtxt.Text += Clipboard.GetDataObject().GetData(DataFormats.Text).ToString();
+            Rtxt.Paste();
         }
         private void 全選All_Click(object sender, EventArgs e)
         {
@@ -109,18 +109,19 @@ namespace CSharp_HomeWork
         }
         private void 顏色Color_Click(object sender, EventArgs e)
         {
-            colorDialog1 = new ColorDialog();
-            DialogResult = colorDialog1.ShowDialog();
+            ColorDialog colorDialog = new ColorDialog();
+            DialogResult = colorDialog.ShowDialog();
             if (DialogResult == DialogResult.OK)
-                Rtxt.ForeColor = colorDialog1.Color;
+                Rtxt.ForeColor = colorDialog.Color;
         }
 
         private void 字型Font_Click(object sender, EventArgs e)
         {
-            fontDialog1 = new FontDialog();
-            DialogResult = fontDialog1.ShowDialog();
+            FontDialog fontDialog = new FontDialog();
+            fontDialog.Font = Rtxt.Font;
+            DialogResult = fontDialog.ShowDialog();
             if (DialogResult == DialogResult.OK)
-                Rtxt.Font = fontDialog1.Font;
+                Rtxt.Font = fontDialog.Font;
         }
 
         private void toUpper_Click(object sender, EventArgs e)
@@ -136,9 +137,15 @@ namespace CSharp_HomeWork
         private void 自動換行Enter_Click(object sender, EventArgs e)
         {
             if(自動換行.Checked == true)
-                Rtxt.WordWrap = true;
-            else
+            {
+                自動換行.Checked = false;
                 Rtxt.WordWrap = false;
+            }
+            else
+            {
+                自動換行.Checked = true;
+                Rtxt.WordWrap = true;
+            }
         }
 
         private void 紅色R_Click(object sender, EventArgs e)
@@ -161,7 +168,7 @@ namespace CSharp_HomeWork
             Rtxt.ForeColor = Color.Black;
         }
 
-        private void 關於AToolStripMenuItem_Click(object sender, EventArgs e)
+        private void 關於About_Click(object sender, EventArgs e)
         {
             MessageBox.Show("此記事本為資策會C#課程作業，由 林佳誼 製作。\n謝謝您的使用！","關於");
         }
@@ -189,6 +196,11 @@ namespace CSharp_HomeWork
                 貼上P.PerformClick();
             if (e.KeyCode == Keys.A && e.Control)
                 全選A.PerformClick();
+        }
+
+        private void 結束X_Click(object sender, EventArgs e)
+        {
+            this.Close();
         }
     }
 }

@@ -5,6 +5,7 @@ using System.Data;
 using System.Drawing;
 using System.Linq;
 using System.Reflection;
+using System.Security.Claims;
 using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
@@ -133,6 +134,13 @@ namespace CSharp_HomeWork
             splitContainer2.Panel2.Controls.Clear();
             splitContainer2.Panel2.Controls.Add(alarm);
             alarm.Show();
+        }
+
+        private void NotePad_Click(object sender, EventArgs e)
+        {
+            NotePad notePad = new NotePad();
+            splitContainer2.Panel2.Controls.Clear();
+            notePad.Show();
         }
     }
 }
