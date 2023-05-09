@@ -28,6 +28,7 @@
         /// </summary>
         private void InitializeComponent()
         {
+            this.components = new System.ComponentModel.Container();
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(NotePad));
             this.mS = new System.Windows.Forms.MenuStrip();
             this.檔案F = new System.Windows.Forms.ToolStripMenuItem();
@@ -81,12 +82,22 @@
             this.printDialog1 = new System.Windows.Forms.PrintDialog();
             this.printDocument1 = new System.Drawing.Printing.PrintDocument();
             this.printPreviewDialog1 = new System.Windows.Forms.PrintPreviewDialog();
+            this.statusStrip1 = new System.Windows.Forms.StatusStrip();
+            this.toolStripStatusLabTime = new System.Windows.Forms.ToolStripStatusLabel();
+            this.toolStripContainer1 = new System.Windows.Forms.ToolStripContainer();
+            this.timer1 = new System.Windows.Forms.Timer(this.components);
             this.mS.SuspendLayout();
             this.tS.SuspendLayout();
+            this.statusStrip1.SuspendLayout();
+            this.toolStripContainer1.BottomToolStripPanel.SuspendLayout();
+            this.toolStripContainer1.ContentPanel.SuspendLayout();
+            this.toolStripContainer1.TopToolStripPanel.SuspendLayout();
+            this.toolStripContainer1.SuspendLayout();
             this.SuspendLayout();
             // 
             // mS
             // 
+            this.mS.Dock = System.Windows.Forms.DockStyle.None;
             this.mS.Items.AddRange(new System.Windows.Forms.ToolStripItem[] {
             this.檔案F,
             this.編輯E,
@@ -118,64 +129,64 @@
             // 新增N
             // 
             this.新增N.Name = "新增N";
-            this.新增N.Size = new System.Drawing.Size(180, 22);
+            this.新增N.Size = new System.Drawing.Size(169, 22);
             this.新增N.Text = "新增(&N)     Ctrl+N";
             this.新增N.Click += new System.EventHandler(this.新增Add_Click);
             // 
             // 開啟O
             // 
             this.開啟O.Name = "開啟O";
-            this.開啟O.Size = new System.Drawing.Size(180, 22);
+            this.開啟O.Size = new System.Drawing.Size(169, 22);
             this.開啟O.Text = "開啟(&O)     Ctrl+O";
             this.開啟O.Click += new System.EventHandler(this.開啟Open_Click);
             // 
             // tSSep3
             // 
             this.tSSep3.Name = "tSSep3";
-            this.tSSep3.Size = new System.Drawing.Size(177, 6);
+            this.tSSep3.Size = new System.Drawing.Size(166, 6);
             // 
             // 儲存S
             // 
             this.儲存S.Name = "儲存S";
-            this.儲存S.Size = new System.Drawing.Size(180, 22);
+            this.儲存S.Size = new System.Drawing.Size(169, 22);
             this.儲存S.Text = "儲存(&S)     Ctrl+S";
             this.儲存S.Click += new System.EventHandler(this.儲存Save_Click);
             // 
             // 另存新檔A
             // 
             this.另存新檔A.Name = "另存新檔A";
-            this.另存新檔A.Size = new System.Drawing.Size(180, 22);
+            this.另存新檔A.Size = new System.Drawing.Size(169, 22);
             this.另存新檔A.Text = "另存新檔(&A)";
             this.另存新檔A.Click += new System.EventHandler(this.另存新檔OtherSave_Click);
             // 
             // tSSep4
             // 
             this.tSSep4.Name = "tSSep4";
-            this.tSSep4.Size = new System.Drawing.Size(177, 6);
+            this.tSSep4.Size = new System.Drawing.Size(166, 6);
             // 
             // 列印P
             // 
             this.列印P.Name = "列印P";
-            this.列印P.Size = new System.Drawing.Size(180, 22);
+            this.列印P.Size = new System.Drawing.Size(169, 22);
             this.列印P.Text = "列印(&P)     Ctrl+P";
             this.列印P.Click += new System.EventHandler(this.列印Print_Click);
             // 
             // 預覽列印V
             // 
             this.預覽列印V.Name = "預覽列印V";
-            this.預覽列印V.Size = new System.Drawing.Size(180, 22);
+            this.預覽列印V.Size = new System.Drawing.Size(169, 22);
             this.預覽列印V.Text = "預覽列印(&V)";
             this.預覽列印V.Click += new System.EventHandler(this.預覽列印View_Click);
             // 
             // tSSep5
             // 
             this.tSSep5.Name = "tSSep5";
-            this.tSSep5.Size = new System.Drawing.Size(177, 6);
+            this.tSSep5.Size = new System.Drawing.Size(166, 6);
             // 
             // 結束X
             // 
             this.結束X.Name = "結束X";
-            this.結束X.Size = new System.Drawing.Size(180, 22);
+            this.結束X.Size = new System.Drawing.Size(169, 22);
             this.結束X.Text = "結束(&X)";
             this.結束X.Click += new System.EventHandler(this.結束X_Click);
             // 
@@ -262,25 +273,25 @@
             // 顏色C
             // 
             this.顏色C.Name = "顏色C";
-            this.顏色C.Size = new System.Drawing.Size(180, 22);
+            this.顏色C.Size = new System.Drawing.Size(145, 22);
             this.顏色C.Text = "顏色(&C)";
             // 
             // 字型Y
             // 
             this.字型Y.Name = "字型Y";
-            this.字型Y.Size = new System.Drawing.Size(180, 22);
+            this.字型Y.Size = new System.Drawing.Size(145, 22);
             this.字型Y.Text = "字型(&Y)";
             // 
             // toUpperU
             // 
             this.toUpperU.Name = "toUpperU";
-            this.toUpperU.Size = new System.Drawing.Size(180, 22);
+            this.toUpperU.Size = new System.Drawing.Size(145, 22);
             this.toUpperU.Text = "To Upper(&U)";
             // 
             // toLowerL
             // 
             this.toLowerL.Name = "toLowerL";
-            this.toLowerL.Size = new System.Drawing.Size(180, 22);
+            this.toLowerL.Size = new System.Drawing.Size(145, 22);
             this.toLowerL.Text = "To Lower(&L)";
             // 
             // 自動換行
@@ -288,7 +299,7 @@
             this.自動換行.Checked = true;
             this.自動換行.CheckState = System.Windows.Forms.CheckState.Checked;
             this.自動換行.Name = "自動換行";
-            this.自動換行.Size = new System.Drawing.Size(180, 22);
+            this.自動換行.Size = new System.Drawing.Size(145, 22);
             this.自動換行.Text = "自動換行";
             this.自動換行.Click += new System.EventHandler(this.自動換行Enter_Click);
             // 
@@ -300,7 +311,7 @@
             this.藍色Blue,
             this.黑色Black});
             this.快選顏色.Name = "快選顏色";
-            this.快選顏色.Size = new System.Drawing.Size(180, 22);
+            this.快選顏色.Size = new System.Drawing.Size(145, 22);
             this.快選顏色.Text = "快選顏色";
             // 
             // 紅色Red
@@ -338,12 +349,13 @@
             // 關於AToolStripMenuItem
             // 
             this.關於AToolStripMenuItem.Name = "關於AToolStripMenuItem";
-            this.關於AToolStripMenuItem.Size = new System.Drawing.Size(180, 22);
+            this.關於AToolStripMenuItem.Size = new System.Drawing.Size(114, 22);
             this.關於AToolStripMenuItem.Text = "關於(&A)";
             this.關於AToolStripMenuItem.Click += new System.EventHandler(this.關於About_Click);
             // 
             // tS
             // 
+            this.tS.Dock = System.Windows.Forms.DockStyle.None;
             this.tS.Items.AddRange(new System.Windows.Forms.ToolStripItem[] {
             this.tSBtn1,
             this.tSBtn2,
@@ -355,9 +367,9 @@
             this.tSBtn7,
             this.tSSep2,
             this.tSBtn8});
-            this.tS.Location = new System.Drawing.Point(0, 24);
+            this.tS.Location = new System.Drawing.Point(3, 24);
             this.tS.Name = "tS";
-            this.tS.Size = new System.Drawing.Size(800, 25);
+            this.tS.Size = new System.Drawing.Size(208, 25);
             this.tS.TabIndex = 1;
             this.tS.Text = "toolStrip1";
             // 
@@ -457,9 +469,10 @@
             this.Rtxt.Dock = System.Windows.Forms.DockStyle.Fill;
             this.Rtxt.Font = new System.Drawing.Font("新細明體", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(136)));
             this.Rtxt.ImeMode = System.Windows.Forms.ImeMode.NoControl;
-            this.Rtxt.Location = new System.Drawing.Point(0, 49);
+            this.Rtxt.Location = new System.Drawing.Point(0, 0);
             this.Rtxt.Name = "Rtxt";
-            this.Rtxt.Size = new System.Drawing.Size(800, 401);
+            this.Rtxt.ScrollBars = System.Windows.Forms.RichTextBoxScrollBars.ForcedBoth;
+            this.Rtxt.Size = new System.Drawing.Size(800, 379);
             this.Rtxt.TabIndex = 2;
             this.Rtxt.Text = "";
             // 
@@ -485,14 +498,58 @@
             this.printPreviewDialog1.Name = "printPreviewDialog1";
             this.printPreviewDialog1.Visible = false;
             // 
+            // statusStrip1
+            // 
+            this.statusStrip1.Dock = System.Windows.Forms.DockStyle.None;
+            this.statusStrip1.Items.AddRange(new System.Windows.Forms.ToolStripItem[] {
+            this.toolStripStatusLabTime});
+            this.statusStrip1.Location = new System.Drawing.Point(0, 0);
+            this.statusStrip1.Name = "statusStrip1";
+            this.statusStrip1.RenderMode = System.Windows.Forms.ToolStripRenderMode.Professional;
+            this.statusStrip1.Size = new System.Drawing.Size(800, 22);
+            this.statusStrip1.TabIndex = 3;
+            this.statusStrip1.Text = "statusStrip1";
+            // 
+            // toolStripStatusLabTime
+            // 
+            this.toolStripStatusLabTime.Name = "toolStripStatusLabTime";
+            this.toolStripStatusLabTime.Size = new System.Drawing.Size(0, 17);
+            // 
+            // toolStripContainer1
+            // 
+            // 
+            // toolStripContainer1.BottomToolStripPanel
+            // 
+            this.toolStripContainer1.BottomToolStripPanel.Controls.Add(this.statusStrip1);
+            // 
+            // toolStripContainer1.ContentPanel
+            // 
+            this.toolStripContainer1.ContentPanel.AutoScroll = true;
+            this.toolStripContainer1.ContentPanel.Controls.Add(this.Rtxt);
+            this.toolStripContainer1.ContentPanel.Size = new System.Drawing.Size(800, 379);
+            this.toolStripContainer1.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.toolStripContainer1.Location = new System.Drawing.Point(0, 0);
+            this.toolStripContainer1.Name = "toolStripContainer1";
+            this.toolStripContainer1.Size = new System.Drawing.Size(800, 450);
+            this.toolStripContainer1.TabIndex = 4;
+            this.toolStripContainer1.Text = "toolStripContainer1";
+            // 
+            // toolStripContainer1.TopToolStripPanel
+            // 
+            this.toolStripContainer1.TopToolStripPanel.Controls.Add(this.tS);
+            this.toolStripContainer1.TopToolStripPanel.Controls.Add(this.mS);
+            // 
+            // timer1
+            // 
+            this.timer1.Enabled = true;
+            this.timer1.Tick += new System.EventHandler(this.timer1_Tick);
+            // 
             // NotePad
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 12F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(800, 450);
-            this.Controls.Add(this.Rtxt);
-            this.Controls.Add(this.tS);
-            this.Controls.Add(this.mS);
+            this.Controls.Add(this.toolStripContainer1);
             this.KeyPreview = true;
             this.MainMenuStrip = this.mS;
             this.Name = "NotePad";
@@ -502,8 +559,16 @@
             this.mS.PerformLayout();
             this.tS.ResumeLayout(false);
             this.tS.PerformLayout();
+            this.statusStrip1.ResumeLayout(false);
+            this.statusStrip1.PerformLayout();
+            this.toolStripContainer1.BottomToolStripPanel.ResumeLayout(false);
+            this.toolStripContainer1.BottomToolStripPanel.PerformLayout();
+            this.toolStripContainer1.ContentPanel.ResumeLayout(false);
+            this.toolStripContainer1.TopToolStripPanel.ResumeLayout(false);
+            this.toolStripContainer1.TopToolStripPanel.PerformLayout();
+            this.toolStripContainer1.ResumeLayout(false);
+            this.toolStripContainer1.PerformLayout();
             this.ResumeLayout(false);
-            this.PerformLayout();
 
         }
 
@@ -544,7 +609,6 @@
         private System.Windows.Forms.ToolStripButton tSBtn7;
         private System.Windows.Forms.ToolStripSeparator tSSep2;
         private System.Windows.Forms.ToolStripButton tSBtn8;
-        private System.Windows.Forms.RichTextBox Rtxt;
         private System.Windows.Forms.OpenFileDialog openFileDialog1;
         private System.Windows.Forms.SaveFileDialog saveFileDialog1;
         private System.Windows.Forms.FolderBrowserDialog folderBrowserDialog1;
@@ -561,5 +625,10 @@
         private System.Windows.Forms.ToolStripMenuItem 黑色Black;
         private System.Windows.Forms.ToolStripMenuItem 自動換行;
         private System.Windows.Forms.ToolStripMenuItem toUpperU;
+        private System.Windows.Forms.StatusStrip statusStrip1;
+        private System.Windows.Forms.ToolStripStatusLabel toolStripStatusLabTime;
+        public System.Windows.Forms.RichTextBox Rtxt;
+        private System.Windows.Forms.ToolStripContainer toolStripContainer1;
+        private System.Windows.Forms.Timer timer1;
     }
 }

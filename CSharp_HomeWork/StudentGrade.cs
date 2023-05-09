@@ -54,6 +54,8 @@ namespace CSharp_HomeWork
                     MessageBox.Show("請輸入正確的數學成績(0~100)", "警告", MessageBoxButtons.OK, MessageBoxIcon.Warning);
                 else
                 {
+                    btnSearch.Enabled = true;
+                    btnSearchCancel.Enabled = true;
                     btnStatistics.Enabled = true;
                     btnRemove.Enabled = true;
 
@@ -73,6 +75,8 @@ namespace CSharp_HomeWork
 
         private void btnRandom_Click(object sender, EventArgs e)
         {
+            btnSearch.Enabled = true;
+            btnSearchCancel.Enabled = true;
             btnStatistics.Enabled = true;
             btnRemove.Enabled = true;
             RandomScore();
@@ -106,6 +110,8 @@ namespace CSharp_HomeWork
                     MessageBox.Show("請輸入正確的數學成績(0~100)", "警告", MessageBoxButtons.OK, MessageBoxIcon.Warning);
                 else
                 {
+                    btnSearch.Enabled = true;
+                    btnSearchCancel.Enabled = true;
                     btnStatistics.Enabled = true;
                     btnRemove.Enabled = true;
 
@@ -136,6 +142,8 @@ namespace CSharp_HomeWork
 
         private void btnStatistics_Click(object sender, EventArgs e)
         {
+            btnSearch.Enabled = false;
+            btnSearchCancel.Enabled = false;
             btnSave.Enabled = false;
             btnInsert.Enabled = false;
             btnRandom.Enabled = false;
@@ -209,6 +217,8 @@ namespace CSharp_HomeWork
 
         private void btnClear_Click(object sender, EventArgs e)
         {
+            btnSearch.Enabled = false;
+            btnSearchCancel.Enabled = false;
             btnSave.Enabled = true;
             btnInsert.Enabled = true;
             btnRandom.Enabled = true;
@@ -241,6 +251,8 @@ namespace CSharp_HomeWork
 
         private void btnRandom20_Click(object sender, EventArgs e)
         {
+            btnSearch.Enabled= true;
+            btnSearchCancel.Enabled= true;
             btnStatistics.Enabled = true;
             btnRemove.Enabled = true;
 
@@ -302,6 +314,7 @@ namespace CSharp_HomeWork
                 result += $"{string.Format("{0,-4}", StudentList[i].Name)}{string.Format("{0,6}", StudentList[i].ChScore)}{string.Format("{0,6}", StudentList[i].EnScore)}{string.Format("{0,6}", StudentList[i].MathScore)}{string.Format("{0,6}", StudentOtherGradeList[i].Sum)}{string.Format("{0,6}", StudentOtherGradeList[i].Average)}{string.Format("{0,26}", StudentOtherGradeList[i].Lowest)}{string.Format("{0,26}", StudentOtherGradeList[i].Highest)}\n";
             labScore.Text = result;
         }
+
         public void Search(int subject, int start, int end)
         {
             List<Student> TempList = new List<Student>();

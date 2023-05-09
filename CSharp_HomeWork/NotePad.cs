@@ -17,6 +17,7 @@ namespace CSharp_HomeWork
         {
             InitializeComponent();
             Rtxt.LanguageOption = RichTextBoxLanguageOptions.UIFonts;
+            toolStripStatusLabTime.Text = DateTime.Now.ToString("T");
         }
         string name = string.Empty;
         private void 新增Add_Click(object sender, EventArgs e)
@@ -201,6 +202,11 @@ namespace CSharp_HomeWork
         private void 結束X_Click(object sender, EventArgs e)
         {
             this.Close();
+        }
+
+        private void timer1_Tick(object sender, EventArgs e)
+        {
+            toolStripStatusLabTime.Text = DateTime.Now.ToString("T");
         }
     }
 }

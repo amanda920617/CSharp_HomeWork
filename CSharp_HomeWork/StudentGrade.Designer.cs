@@ -302,6 +302,7 @@
             // 
             // btnSearch
             // 
+            this.btnSearch.Enabled = false;
             this.btnSearch.Font = new System.Drawing.Font("微軟正黑體", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(136)));
             this.btnSearch.Location = new System.Drawing.Point(478, 379);
             this.btnSearch.Name = "btnSearch";
@@ -341,6 +342,7 @@
             // 
             // btnSearchCancel
             // 
+            this.btnSearchCancel.Enabled = false;
             this.btnSearchCancel.Font = new System.Drawing.Font("微軟正黑體", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(136)));
             this.btnSearchCancel.Location = new System.Drawing.Point(574, 379);
             this.btnSearchCancel.Name = "btnSearchCancel";
